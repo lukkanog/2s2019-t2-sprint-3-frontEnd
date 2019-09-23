@@ -44,6 +44,32 @@
     <script>
         const input = document.getElementById("nomeEstilo");
         const submit = document.getElementById("btnCadastrar");
+        const bodyTabela = document.querySelector("#tabela-lista-corpo");
+
+        function preencherTabela(lista){
+            lista.forEach((item) =>{
+                const tr = document.createElement("tr");
+                const td_id = document.createElement("td");
+                const td_nome = document.createElement("td");
+
+                td_id.textContent = item.idCategoria;
+                td_nome = item.nome;
+
+                tabelaBody.appendChild(tr);
+                tr.appendChild(td_id);
+                tr.appendChild(td_nome);
+            })
+        }//preencherTabela()
+
+        window.onload = () =>{
+            const URL = "http://localhost:5000/api/estilos";
+
+            fetch(URL)
+            .then(resposta => resposta.json())
+            .then(data => preencherTabela(data))
+            .catch(erro => console.error(erro));
+
+        }
 
         submit.addEventListener("click",function(){
             let objetoJSON = {
@@ -69,14 +95,12 @@
 
         input.addEventListener("input",function(){
             if (input.value.length <= 4){
-                // console.log("menos menor doq 4");
                 submit.disabled = true;
-                // alert("mais menor doq 4");
             }else{
-                // console.log("mais maior doq 4");
                 submit.disabled = false;
             }
         });
+
 
     </script>
 </body>

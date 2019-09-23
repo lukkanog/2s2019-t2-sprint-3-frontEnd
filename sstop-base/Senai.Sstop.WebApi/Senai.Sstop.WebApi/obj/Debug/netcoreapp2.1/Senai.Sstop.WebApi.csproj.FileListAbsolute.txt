@@ -26,3 +26,17 @@ C:\_github\senai-dev-2s2019\sprint-3-frontend\js_v3\sstop-base\Senai.Sstop.WebAp
 C:\_github\senai-dev-2s2019\sprint-3-frontend\js_v3\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorTargetAssemblyInfo.cache
 C:\_github\senai-dev-2s2019\sprint-3-frontend\js_v3\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.dll
 C:\_github\senai-dev-2s2019\sprint-3-frontend\js_v3\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.deps.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.runtimeconfig.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.runtimeconfig.dev.json
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\bin\Debug\netcoreapp2.1\Senai.Sstop.WebApi.pdb
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.csprojAssemblyReference.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorAssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.AssemblyInfoInputs.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.AssemblyInfo.cs
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.RazorTargetAssemblyInfo.cache
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.dll
+C:\Users\46735197879\Desktop\lucas_2semestre\2s2019-t2-sprint-3-frontEnd\sstop-base\Senai.Sstop.WebApi\Senai.Sstop.WebApi\obj\Debug\netcoreapp2.1\Senai.Sstop.WebApi.pdb
