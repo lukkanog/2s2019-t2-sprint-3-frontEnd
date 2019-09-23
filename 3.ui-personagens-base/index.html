@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>InLock - Personagens</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <table class="table table-dark" id="tabela-lista">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Título</th>
+      <th scope="col">Ação</th>
+    </tr>
+  </thead>
+  <tbody id="tabela-lista-corpo">
+    
+  </tbody>
+</table>
+
+    <script>
+        const tabela = document.getElementById("tabela-lista");
+
+        window.onload = () =>{
+            const URL = "https://salty-atoll-57329.herokuapp.com/personagens";
+            
+            function preencherTabela(lista){
+                lista.forEach((element) => {
+                    const tr = document.createElement("tr");
+                    const td_id = document.createElement("td");
+                    const td_titulo = document.createElement("td");
+                    const td_foto = document.createElement("td");
+                    const foto = document.createElement("IMG");
+                    foto.src = element.urlImagem;
+                    foto.style.width = "100px";
+                    foto.style.height = "100px";
+
+                    td_id.textContent = element.nome;
+                    td_titulo.textContent = element.lancamento;
+                    // td_foto.textContent = element.urlImagem;
+
+                    tabela.appendChild(tr);
+                    tr.appendChild(td_id);
+                    tr.appendChild(td_titulo);
+                    tr.appendChild(td_foto);
+                    td_foto.appendChild(foto);
+                })//foreach
+            }
+            
+            fetch(URL)
+            .then(resposta => resposta.json())
+            .then(data => preencherTabela(data))
+            .catch(erro => console.error(erro))
+
+            
+        }//onload
+    </script>
+</body>
+
+</html>
