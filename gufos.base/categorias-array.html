@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>arrays</title>
+</head>
+<body>
+    <script>
+        let div = document.createElement("div");
+        // ARRAY DA P COLOCAR TUDO FODASE O TIPO
+        // let arr = ["Eventos A","Eventos B", 1, div, 1.3, {nome : "aa"}, [3,4]];
+        let arr = [{numero : 1, nome : "testando"},{numero : 2, nome : "testando dnv"}];
+        // console.log(arr[2]);
+        // console.log(arr.length);
+
+        // // arr.forEach((element,index) => {
+        // //     console.log(element,index);
+        // // });
+
+        // // for (let i = 0;i < arr.length; i++){
+        // //     console.log(arr[i]);
+        // // }
+
+        // let i = 0;
+        // while(i < arr.length){
+        //     console.log(arr[i]);
+        //     i++;
+        // }
+
+        // arr.push("d");//adiciona no ultimo
+        // arr.pop();//deleta o ultimo 
+
+
+        // console.log(arr.join(" // "));
+
+        // console.log(arr.sort());
+        // console.log(arr.reverse());
+        // console.log(arr.sort().reverse());
+
+        // let arr_2 = arr.map(element => {
+        //     return element + "teste";
+        // });
+
+        // arr_2.map(element =>{
+        //     console.log(element);
+        // })
+
+        // let arr_teste = arr.map(element =>{
+        //     console.log(element.nome);
+        // });
+
+        // let numero = [10,20,30,40,50];
+
+        // // let variavel = numero.map(element =>{
+        // //     if (element >= 30){
+        // //         return element;
+        // //     }
+        // // });
+
+        // let variavel = numero.filter(element =>{
+        //     return element >= 30;
+        // });
+        // console.log(variavel);
+
+        // let trinta = variavel.filter(element =>{
+        //     return element == 30;
+        // });
+        // console.log(trinta);
+
+        let numeros = [10,20,30,40];
+        let soma = numeros.reduce((prevValue, element) =>{
+            return prevValue + element;
+        });
+
+    </script>
+</body>
+</html>

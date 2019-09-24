@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Exercícios</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        let personagens = [{
+            nome: "Capitão Cometa",
+            dataAparicao: 1951,
+            editora: "DC"
+        }, {
+            nome: "Lanterna Verde",
+            dataAparicao: 1940,
+            editora: "DC"
+        }, {
+            nome: "Ciborgue",
+            dataAparicao: 1980,
+            editora: "DC"
+        }, {
+            nome: "Homem Aranha",
+            dataAparicao: 1962,
+            editora: "Marvel"
+        }, {
+            nome: "Homem de Ferro",
+            dataAparicao: 1963,
+            editora: "Marvel"
+        }, {
+            nome: "Capitão América",
+            dataAparicao: 1940,
+            editora: "Marvel"
+        }];
+
+        let marvel = personagens.filter(element =>{
+            return element.editora == "Marvel";
+        });
+        console.log(marvel);
+
+        let novos = personagens.filter(element =>{
+            return element.dataAparicao > 1950
+        });
+        console.log(novos);
+
+        personagens.map(element =>{
+            console.log(element.nome);
+        });
+
+        let capitaMarvel = {
+            nome: "Capitã Marvel",
+            dataAparicao : 1977,
+            editora: "Marvel"
+        };
+        personagens.push(capitaMarvel);
+        console.log(personagens);
+
+        let quantidadeMarvel = 0;
+        personagens.map(element =>{
+            if(element.editora == "Marvel"){
+                quantidadeMarvel ++;
+            }
+        });
+        console.log(quantidadeMarvel);
+
+        personagens.map(element =>{
+            console.log(element.nome,element.dataAparicao);
+        });
+
+        let idadePersonagens = [];
+        personagens.map(element =>{
+            let idade = 2019 - element.dataAparicao;
+            idadePersonagens.push(idade);   
+        })
+        let idadeSomada = idadePersonagens.reduce((prevValue,element) =>{
+            return prevValue += element;
+        })
+        console.log(idadeSomada)
+
+    </script>
+
+</body>
+
+</html>

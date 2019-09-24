@@ -24,14 +24,14 @@
 </table>
 
     <script>
-        const tabela = document.getElementById("tabela-lista");
+        const bodyTabela = document.getElementById("tabela-lista-corpo");
 
         window.onload = () =>{
             const URL = "https://salty-atoll-57329.herokuapp.com/personagens";
             
             function preencherTabela(lista){
                 lista.forEach((element) => {
-                    const tr = document.createElement("tr");
+                    const  tr = document.createElement("tr");
                     const td_id = document.createElement("td");
                     const td_titulo = document.createElement("td");
                     const td_foto = document.createElement("td");
@@ -44,11 +44,11 @@
                     td_titulo.textContent = element.lancamento;
                     // td_foto.textContent = element.urlImagem;
 
-                    tabela.appendChild(tr);
                     tr.appendChild(td_id);
                     tr.appendChild(td_titulo);
                     tr.appendChild(td_foto);
                     td_foto.appendChild(foto);
+                    bodyTabela.appendChild(tr);
                 })//foreach
             }
             
