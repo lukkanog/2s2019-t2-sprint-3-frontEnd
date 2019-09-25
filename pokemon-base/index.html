@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+</head>
+<body>
+    <main id="main">    
+        <h1>P O K É M O N</h1>
+        <form>
+            <div>
+
+                <label for="input_pokemon">Buscar por nome ou número Pokémon</label>
+                <input type="text" id="input_pokemon">
+                <input type="submit" id="submit_pokemon" class="input_submit" value="Buscar" disabled>
+            </div>
+        </form>
+        <table>
+            <br>
+            <thead>
+                <tr>
+                    <th>Nome do Pokemon</th>
+                    <th>Foto</th>
+                    <th>Habilidades</th>
+                    <th>Altura</th>
+                    <th>Peso</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </main>
+    
+    <script>
+        const input = document.querySelector("#input_pokemon");
+        const submit = document.querySelector("#submit_pokemon");
+        const main = document.querySelector("#main");
+        const tbody = document.querySelector("#tbody");
+        const url = "https://pokeapi.co/api/v2/pokemon/";
+
+
+
+        submit.addEventListener("click",()=>{
+            event.preventDefault();
+            let urlBuscada = url + input.value.toLowerCase();
+
+            fetch(urlBuscada)
+            .then(apagarUnico())
+            .then(result => result.json())
+            .then(x => mostrarPokemon(x))
+            .catch(error => mostrarErro(error));
+
+        });
+
+        input.addEventListener("input",()=>{
+            if (input.value.length > 0)
+            {
+                submit.disabled = false;
+            }
+        });
+
+
+        function mostrarPokemon(pokemon)
+        {
+            let linha = document.createElement("tr");
+            linha.id = "UNIQUE"
+            let td_nome = document.createElement("td");
+            let td_habilidades = document.createElement("td");
+            let td_altura = document.createElement("td");
+            let td_peso = document.createElement("td");
+            let td_foto = document.createElement("td");
+            let img = document.createElement("img"); 
+            img.src = pokemon.sprites.front_default;            
+            
+            tbody.appendChild(linha);
+            linha.appendChild(td_nome);
+            linha.appendChild(td_foto);
+            td_foto.appendChild(img); 
+            linha.appendChild(td_habilidades);
+            linha.appendChild(td_altura);
+            linha.appendChild(td_peso);
+
+            pokemon.abilities.map(element => {
+                let pHabilidade = document.createElement("p");
+                pHabilidade.textContent = "• " + element.ability.name;
+                td_habilidades.appendChild(pHabilidade);
+            });
+                
+
+            td_nome.textContent = pokemon.name.toUpperCase();
+            td_altura.textContent = pokemon.height;
+            td_peso.textContent = pokemon.weight;
+            
+
+        }
+
+        function mostrarErro(){
+            let p = document.createElement("p");
+            p.textContent = "Pokemon não encontrado!";
+            p.style.color = "red";
+            p.id = "UNIQUE"
+            p.className = "p_erro"
+            main.appendChild(p);
+        }
+
+        function apagarUnico(){
+            let unique = document.getElementById("UNIQUE");
+            if (unique != null)
+            {
+                unique.remove();
+            }
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: "calibri"
+}
+main{
+    width:80%;
+    margin: auto;
+    background-color: #ffe366;
+    padding: 3em;
+    text-align:center;
+    min-height:100vh;
+}
+h1{
+    margin:auto;
+    color: #d81200;
+}
+
+form{
+    margin:auto;
+    padding:2em;
+    display:flex;
+    justify-content: space-around;
+    background-color: #ffe991;
+    border: 1px solid #635c00;
+    border-radius: 2em;
+}
+
+table{
+    width: 100%;
+    background-color: #fff;
+    text-align:center;
+}
+
+table thead{
+    background-color: rgb(248, 217, 217);
+}
+
+.p_erro{
+    font-size:2em;
+    text-align:center;
+    padding:1.5em;
+    border:1px solid #000;
+    border-radius:0.3em;
+
+}
