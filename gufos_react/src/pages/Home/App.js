@@ -3,44 +3,44 @@ import React from 'react';
 import './App.css';
 
 //realizar import dos estilos
-import "./assets/css/flexbox.css";
-import "./assets/css/login.css";
-import "./assets/css/reset.css";
-import "./assets/css/style.css";
+import "../../assets/css/flexbox.css";
+import "../../assets/css/login.css";
+import "../../assets/css/reset.css";
+import "../../assets/css/style.css";
 
-import logo from "./assets/img/icon-login.png"
+import logo from "../../assets/img/icon-login.png"
 
 function App() {
   return (
     <div className="App">
       <div>
-      <header class="cabecalhoPrincipal">
-        <div class="container">
+      <header className="cabecalhoPrincipal">
+        <div className="container">
           <img src={logo} />
 
-          <nav class="cabecalhoPrincipal-nav">
-            <a>Home</a>
+          <nav className="cabecalhoPrincipal-nav">
+            <a>HoMe</a>
             <a>Eventos</a>
             <a>Contato</a>
-            <a class="cabecalhoPrincipal-nav-login" href="login.html">Login</a>
+            <a className="cabecalhoPrincipal-nav-login" href="login.html">Login</a>
           </nav>
         </div>
       </header>
 
-      <section class="conteudoImagem">
+      <section className="conteudoImagem">
         <div>
           <h1>Gufos</h1>
           <h2>Área de eventos da Escola SENAI de Informática.</h2>
         </div>
       </section>
 
-      <main class="conteudoPrincipal">
+      <main className="conteudoPrincipal">
         <section id="conteudoPrincipal-eventos">
           <h1 id="conteudoPrincipal-eventos-titulo">Opiniões</h1>
-          <div class="container">
+          <div className="container">
             <nav>
-              <ul class="conteudoPrincipal-dados">
-                <li class="conteudoPrincipal-dados-link eventos">
+              <ul className="conteudoPrincipal-dados">
+                <li className="conteudoPrincipal-dados-link eventos">
                   <h2>Pessoa A</h2>
                   <p>
                     Breve descrição sobre a opinião A. Lorem ipsum lorem ipsum
@@ -48,7 +48,7 @@ function App() {
                   </p>
                 </li>
 
-                <li class="conteudoPrincipal-dados-link eventos">
+                <li className="conteudoPrincipal-dados-link eventos">
                   <h2>Pessoa B</h2>
                   <p>
                     Breve descrição sobre a opinião B. Lorem ipsum lorem ipsum
@@ -56,7 +56,7 @@ function App() {
                   </p>
                 </li>
 
-                <li class="conteudoPrincipal-dados-link eventos">
+                <li className="conteudoPrincipal-dados-link eventos">
                   <h2>Pessoa C</h2>
                   <p>
                     Breve descrição sobre a opinião C. Lorem ipsum lorem ipsum
@@ -64,11 +64,10 @@ function App() {
                   </p>
                 </li>
 
-                <li class="conteudoPrincipal-dados-link eventos">
+                <li className="conteudoPrincipal-dados-link eventos">
                   <h2>Pessoa D</h2>
                   <p>
-                    Breve descrição sobre a opinião D. Lorem ipsum lorem ipsum
-                    lorem ipsum lorem ipsum lorem ipsum.
+                    Breve descrição sobre a opinião D. fotossíntese.
                   </p>
                 </li>
               </ul>
@@ -78,8 +77,8 @@ function App() {
 
         <section id="conteudoPrincipal-visao">
           <h1 id="conteudoPrincipal-visao-titulo">Por Quê Participar?</h1>
-          <div class="container">
-            <p class="visao-texto">
+          <div className="container">
+            <p className="visao-texto">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
               Nullam auctor suscipit eros sed blandit. <br />
               Fusce euismod neque sed dapibus sollicitudin. <br />Duis vel lacus
@@ -90,19 +89,18 @@ function App() {
 
         <section id="conteudoPrincipal-contato">
           <h1 id="conteudoPrincipal-contato-titulo">Contato</h1>
-          <div class="container conteudo-contato-titulo">
-            <div class="contato-mapa conteudo-contato-mapa"></div>
-            <div class="contato-endereco conteudo-contato-endereco">
+          <div className="container conteudo-contato-titulo">
+            <div className="contato-mapa conteudo-contato-mapa"></div>
+            <div className="contato-endereco conteudo-contato-endereco">
               Alameda Barão de Limeira, 539 <br />
               São Paulo - SP
             </div>
           </div>
         </section>
       </main>
-
-      <footer class="rodapePrincipal">
-        <section class="rodapePrincipal-patrocinadores">
-          <div class="container">
+      <footer className="rodapePrincipal">
+        <section className="rodapePrincipal-patrocinadores">
+          <div className="container">
             <p>Escola SENAI de Informática - 2019</p>
           </div>
         </section>
