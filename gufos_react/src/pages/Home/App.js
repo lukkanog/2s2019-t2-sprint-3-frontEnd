@@ -8,7 +8,9 @@ import "../../assets/css/login.css";
 import "../../assets/css/reset.css";
 import "../../assets/css/style.css";
 
-import logo from "../../assets/img/icon-login.png"
+import logo from "../../assets/img/icon-login.png";
+
+import {Link} from "react-router-dom";
 
 function App() {
   return (
@@ -22,7 +24,7 @@ function App() {
             <a>HoMe</a>
             <a>Eventos</a>
             <a>Contato</a>
-            <a className="cabecalhoPrincipal-nav-login" href="login.html">Login</a>
+            <Link to="/login" className="cabecalhoPrincipal-nav-login" >Login</Link>
           </nav>
         </div>
       </header>
