@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import '../Home';
 
 //realizar import dos estilos
 import "../../assets/css/flexbox.css";
