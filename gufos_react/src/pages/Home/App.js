@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from './logo.svg';
-import '../Home';
+// import '../Home';
 
 //realizar import dos estilos
 import "../../assets/css/flexbox.css";
@@ -22,7 +22,7 @@ function App() {
 
           <nav className="cabecalhoPrincipal-nav">
             <a>HoMe</a>
-            <a>Eventos</a>
+            <Link to="/eventos">Eventos</Link>
             <a>Contato</a>
             <Link to="/login" className="cabecalhoPrincipal-nav-login" >Login</Link>
           </nav>

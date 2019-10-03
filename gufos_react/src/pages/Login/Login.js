@@ -43,7 +43,7 @@ class Login extends Component{
                 localStorage.setItem("usuario-gufos", response.data.token)
                 this.props.history.push("/categorias")
             }else{
-                console.log("deu ruim carai");
+                console.log("deu ruim");
             }
         })
         .catch(erro => { 
